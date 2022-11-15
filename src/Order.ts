@@ -1,4 +1,5 @@
 import Item from "./Item";
+import TaxItem from "./TaxItem";
 
 export default class Order {
   code: string;
@@ -26,7 +27,9 @@ export default class Order {
     let taxes = 0;
 
     for (const item of this.items) {
-      taxes += item.calculateTaxes();
+      if (item instanceof TaxItem) {
+        taxes += item.calculateTaxes();
+      }
     }
 
     return taxes;
