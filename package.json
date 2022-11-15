@@ -1,0 +1,19 @@
+{
+  "name": "design-software-solid",
+  "version": "1.0.0",
+  "description": "https://www.youtube.com/watch?v=4oVByCJJkRI&t=1327s",
+  "main": "index.js",
+  "scripts": {
+    "main": "tsc && node ./dist/main.js",
+    "test": "tsc && jest ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.2.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.0"
+  }
+}
